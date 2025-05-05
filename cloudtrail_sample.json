@@ -1,0 +1,51 @@
+[
+  {
+    "eventTime": "2024-12-01T10:15:00Z",
+    "eventName": "ConsoleLogin",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "alice"
+    },
+    "sourceIPAddress": "198.51.100.10",
+    "responseElements": {
+      "ConsoleLogin": "Success"
+    }
+  },
+  {
+    "eventTime": "2024-12-01T10:20:00Z",
+    "eventName": "ConsoleLogin",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "bob"
+    },
+    "sourceIPAddress": "203.0.113.5",
+    "responseElements": {
+      "ConsoleLogin": "Failure"
+    }
+  },
+  {
+    "eventTime": "2024-12-01T10:25:00Z",
+    "eventName": "CreateUser",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "admin"
+    },
+    "sourceIPAddress": "198.51.100.10",
+    "requestParameters": {
+      "userName": "testuser"
+    }
+  },
+  {
+    "eventTime": "2024-12-01T10:30:00Z",
+    "eventName": "AttachUserPolicy",
+    "userIdentity": {
+      "type": "IAMUser",
+      "userName": "admin"
+    },
+    "sourceIPAddress": "198.51.100.10",
+    "requestParameters": {
+      "userName": "testuser",
+      "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+    }
+  }
+]
